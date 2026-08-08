@@ -1,0 +1,75 @@
+/* Base + iOS standalone niceties */
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: #FBF7F0;
+  overscroll-behavior-y: none;
+  -webkit-text-size-adjust: 100%;
+}
+input { font-family: inherit; -webkit-appearance: none; border-radius: 0; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+/* keep content clear of the iPhone notch / home indicator */
+#root { padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
+
+/* ---- utility shim (only the classes this app uses) ---- */
+.flex { display: flex; }
+.flex-1 { flex: 1 1 0%; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.items-baseline { align-items: baseline; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.uppercase { text-transform: uppercase; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.text-sm { font-size: 14px; }
+.w-full { width: 100%; }
+.min-w-0 { min-width: 0; }
+.shrink-0 { flex-shrink: 0; }
+.outline-none { outline: none; }
+.bg-transparent { background: transparent; }
+
+.rounded-full { border-radius: 9999px; }
+.rounded-3xl { border-radius: 24px; }
+.rounded-2xl { border-radius: 16px; }
+.rounded-xl { border-radius: 12px; }
+
+.gap-1\.5 { gap: 6px; }
+.gap-2 { gap: 8px; }
+.gap-3 { gap: 12px; }
+.gap-4 { gap: 16px; }
+
+.mb-1 { margin-bottom: 4px; }
+.mb-1\.5 { margin-bottom: 6px; }
+.mb-2 { margin-bottom: 8px; }
+.mb-4 { margin-bottom: 16px; }
+.mb-5 { margin-bottom: 20px; }
+.mb-6 { margin-bottom: 24px; }
+.mt-1 { margin-top: 4px; }
+.mt-3 { margin-top: 12px; }
+.mt-4 { margin-top: 16px; }
+.mt-6 { margin-top: 24px; }
+.mx-2 { margin-left: 8px; margin-right: 8px; }
+
+.p-1 { padding: 4px; }
+.p-3\.5 { padding: 14px; }
+.p-5 { padding: 20px; }
+.px-3 { padding-left: 12px; padding-right: 12px; }
+.px-4 { padding-left: 16px; padding-right: 16px; }
+.pl-1\.5 { padding-left: 6px; }
+.pt-3 { padding-top: 12px; }
+.py-1 { padding-top: 4px; padding-bottom: 4px; }
+.py-1\.5 { padding-top: 6px; padding-bottom: 6px; }
+.py-2 { padding-top: 8px; padding-bottom: 8px; }
+.py-2\.5 { padding-top: 10px; padding-bottom: 10px; }
+.py-3 { padding-top: 12px; padding-bottom: 12px; }
+.py-3\.5 { padding-top: 14px; padding-bottom: 14px; }
+
+.transition-all { transition: all .18s ease; }
+.transition-transform { transition: transform .12s ease; }
+.active\:scale-90:active { transform: scale(.90); }
+.active\:scale-95:active { transform: scale(.95); }
+.active\:scale-\[0\.98\]:active { transform: scale(.98); }

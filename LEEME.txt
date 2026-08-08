@@ -1,0 +1,43 @@
+DIVIDIR LA CUENTA — app para iPhone (PWA)
+==========================================
+
+Esta carpeta es la app completa. Funciona sin conexión una vez instalada
+y usa la hoja de compartir del iPhone (WhatsApp, Mensajes, Mail, etc.).
+
+Archivos (subilos TODOS juntos, en la misma carpeta):
+  index.html, app.js, styles.css, manifest.webmanifest, sw.js,
+  icon-192.png, icon-512.png, apple-touch-icon.png
+
+
+PASO 1 — Subirla a internet (necesita HTTPS)
+--------------------------------------------
+El compartir nativo y la instalación solo funcionan sobre HTTPS, así que
+hay que ponerla online. Elegí una opción:
+
+  OPCIÓN A — La más rápida (Netlify Drop, sin configurar nada)
+    1. Entrá desde la compu a:  https://app.netlify.com/drop
+    2. Arrastrá esta carpeta entera a la ventana.
+    3. Te da una dirección https (ej: https://algo-al-azar.netlify.app).
+       Esa es tu app. (Te va a pedir crear una cuenta gratis para que
+       quede guardada; si no, es temporal.)
+
+  OPCIÓN B — Permanente y gratis (GitHub Pages)
+    1. Creá un repositorio en GitHub y subí estos archivos a la raíz.
+    2. Settings → Pages → Branch: main / (root) → Save.
+    3. A los minutos te da una URL https://usuario.github.io/repo/
+
+
+PASO 2 — Instalarla en el iPhone
+--------------------------------
+  1. Abrí la dirección https EN SAFARI (tiene que ser Safari, no Chrome).
+  2. Tocá el botón Compartir (el cuadrado con la flecha para arriba).
+  3. Elegí "Agregar a inicio".
+  4. Confirmá. Te queda el ícono en la pantalla de inicio.
+
+Ahora se abre a pantalla completa, sin la barra de Safari, como una app.
+El botón "Compartir resumen" va a abrir WhatsApp y el resto de tus apps.
+
+
+Nota: si actualizás los archivos en el hosting, en el iPhone puede tardar
+en verse el cambio por el caché. Cerrá y reabrí la app, o borrá el ícono
+y volvé a agregarlo.
