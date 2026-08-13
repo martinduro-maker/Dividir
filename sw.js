@@ -1,4 +1,4 @@
-const CACHE = "dividir-v1";
+const CACHE = "dividir-v2";
 const ASSETS = [
   "./",
   "./index.html",

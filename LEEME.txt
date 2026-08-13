@@ -38,6 +38,18 @@ Ahora se abre a pantalla completa, sin la barra de Safari, como una app.
 El botón "Compartir resumen" va a abrir WhatsApp y el resto de tus apps.
 
 
+GUARDAR CUENTAS
+---------------
+Cada división tiene un botón "Guardar": le ponés un nombre y queda en
+"Cuentas guardadas" (desde la pantalla de inicio). Desde ahí las volvés a
+abrir con todos los datos o las borrás.
+
+Las cuentas se guardan EN EL TELÉFONO (en el navegador), no en un servidor.
+Quedan aunque cierres la app. Se guardan por dispositivo: si abrís la app en
+otro teléfono no vas a ver las de este. Si borrás la app y los datos del
+sitio en Safari, se borran las cuentas guardadas.
+
+
 Nota: si actualizás los archivos en el hosting, en el iPhone puede tardar
 en verse el cambio por el caché. Cerrá y reabrí la app, o borrá el ícono
 y volvé a agregarlo.
